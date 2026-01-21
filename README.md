@@ -21,6 +21,21 @@ Split: The data is split into 80% training and 20% testing sets using train_test
 
 The model is a Sequential CNN designed to extract hierarchical features from MRI scans:
 
+| Layer Type | Configuration |
+| :--- | :--- |
+| **Convolutional** | 32 filters (2x2), ReLU activation |
+| **Convolutional** | 32 filters (2x2), ReLU activation |
+| **Normalization** | Batch Normalization |
+| **Pooling** | MaxPooling (2x2) |
+| **Regularization** | Dropout (25%) |
+| **Convolutional** | 64 filters (2x2), ReLU activation |
+| **Convolutional** | 64 filters (2x2), ReLU activation |
+| **Normalization** | Batch Normalization |
+| **Pooling** | MaxPooling (2x2) |
+| **Dense (Hidden)** | 512 units, ReLU activation |
+| **Regularization** | Dropout (50%) |
+| **Output** | 2 units, Softmax activation |
+
 ### Training Process
 Loss Function: Categorical Crossentropy.
 
