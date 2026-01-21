@@ -9,6 +9,7 @@ The primary goal of this notebook is to automate the detection of brain tumors f
 ### Dataset
 
 The project uses the Brain MRI Images for Brain Tumor Detection dataset.
+
 Classes:
 0: Tumor
 1: Normal
